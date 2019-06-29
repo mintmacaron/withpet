@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<style>
+  .container{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+</style>
+
+<head>
+
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="nav-item nav-link" href="{% url 'home' %}"> HOME </a>
+    <a class="nav-item nav-link" href="{% url 'signup' %}"> 회원가입</a>
+    <a class="nav-item nav-link" href="{% url 'login' %}">로그인</a>
+
+
+   
+  </div>
+ 
+  <div class="container">
+        <form action="" method="get">
+        <input type="text" name="q" value="{{ q }}" style="width: 1300px; height:80px; margin-left: 100px; margin-top: 600px; border-color:#B99EFF;"> 
+        <input type="submit" value="검색" id="search" style="width: 120px; height:75px; font-size:40px; font-family: 'Do Hyeon', sans-serif;">
+        </form>
+  </div>
+  
+</body>
+
+
+
+</body>
+
+</html>
